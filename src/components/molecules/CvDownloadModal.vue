@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { useI18n } from '@/composables/useI18n'
-import AppButton from '@/components/atoms/AppButton.vue'
 
 defineProps<{
   show: boolean

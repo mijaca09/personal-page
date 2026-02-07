@@ -100,7 +100,7 @@ export function useGitHubRepos() {
       if (!response.ok) return []
       const data: Record<string, number> = await response.json()
       // Return languages sorted by bytes (most used first)
-      return Object.keys(data).sort((a, b) => data[b] - data[a])
+      return Object.keys(data).sort((a, b) => (data[b] ?? 0) - (data[a] ?? 0))
     } catch {
       return []
     }

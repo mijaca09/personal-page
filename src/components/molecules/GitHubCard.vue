@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { GitHubRepo, getDeviconUrl } from '@/composables/useGitHubRepos'
+import { type GitHubRepo, getDeviconUrl } from '@/composables/useGitHubRepos'
 import { useI18n } from '@/composables/useI18n'
 import AppTag from '@/components/atoms/AppTag.vue'
 import AppIcon from '@/components/atoms/AppIcon.vue'
